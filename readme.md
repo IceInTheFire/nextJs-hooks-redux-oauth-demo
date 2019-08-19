@@ -2,7 +2,9 @@
 ```
 这个demo是next.js的一个练习项目，使用的是react16.8以后的hooks函数写法。
 
-用useReducer和useContext封装了一个redux方法，不像以前的class写法一样，还要引入一个react-redux库以及第三方异步操作redux的库。
+用useReducer和useContext封装了一个redux方法，不需要引入react-redux库以及第三方异步操作redux的库。
+
+跟以前的class写法不一致。
 
 这个demo为了验证redux是否可用，做了一个登录的oauth验证。（无论是商家登录还是用户登录，账号密码随便输）
 
