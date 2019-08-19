@@ -1,0 +1,141 @@
+.header-top{
+	background: #F2F2F2;
+	width: 100%;
+	height: 35px;
+	box-sizing: border-box;
+	//padding: 9px 0;
+	border-bottom: 1px solid #e2e2e2;
+	position: relative;
+	z-index:999;
+	.header-main{
+		width: 1190px;
+		margin: 0 auto;
+		height: 100%;
+	}
+
+	a{
+		display: inline-block;
+		padding: 9px 7px;
+		font-size: 12px;
+		line-height: 16px;
+		//height:18px;
+		//border-right: 1px solid #c5c5c5;
+		color: #888;
+		//vertical-align: middle;
+		&:hover{
+			color: #ff464e;
+		}
+		&.red{
+			color: #ff464e;
+		}
+		&.qq{
+			background: url('/static/img/q.jpg') left center no-repeat;
+			padding-left: 21px;
+			margin-left: 10px;
+		}
+	}
+	.line{
+		width: 1px;
+		height: 18px;
+		margin-top: 2px;
+		background: #c5c5c5;
+		display: inline-block;
+		vertical-align: middle;
+	}
+	.xingxing{
+		display: inline-block;
+		padding: 9px 7px;
+		cursor: pointer;
+		position: relative;
+		border-right: 1px solid #F2F2F2;
+		border-left: 1px solid #F2F2F2;
+		font-size: 12px;
+		//vertical-align: middle;
+		i{
+			color:#FFD000;
+			font-size:14px;
+			margin-right: 4px;
+		}
+		.shou_toggle{
+			background: #fff;
+			border: 1px solid #e2e2e2;
+			height: 26px;
+			left: -1px;
+			display: none;
+			line-height: 26px;
+			margin-top: -1px;
+			position: absolute;
+			text-align: center;
+			top: 35px;
+			width: 130px;
+			z-index: -1;
+			span{
+				color: #ff464e;
+			}
+		}
+		&:hover{
+			background: #fff;
+			border-color: #ddd;
+			padding-bottom: 10px;
+			.shou_toggle{
+				display: block;
+			}
+		}
+	}
+	.header-left{
+		float: left;
+		//height: 16px;
+	}
+	
+	.header-right{
+		float: right;
+	}
+	
+	
+	.top_pm {
+		float: left; max-width: 160px; overflow: hidden; white-space: nowrap;
+		.sk_name {
+			color: #ff464e;
+			max-width: 93px;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			font-weight: bold;
+		}
+		.top-down { background-image: url("https://image.meituitui.com/w/Content/images/gray.png"); background-position: 0 0; background-repeat: no-repeat; height: 6px; width: 8px;    margin: auto 5px;
+			vertical-align: middle; display:inline-block;}
+		.top-toggle {
+			background: #fff; border: 1px solid #ccc; display: none; margin-top: -1px; position: absolute; top: 35px;z-index: 1000; min-width:97px;
+			cursor: pointer;
+			a{
+				padding: 8px 16px 8px 12px;
+			}
+			i{
+				margin-left: 0px;
+				&.exit{
+					background: url("https://image.meituitui.com/w/Content/images/nav5.png");
+					width: 15px;
+					height: 15px;
+					margin-top: -2px;
+					vertical-align: middle;
+					margin-right:10px;
+					display: inline-block;
+				}
+			}
+		}
+		&:hover{
+			.top-down { background-image: url("https://image.meituitui.com/w/Content/images/shtriangle.png"); background-position: 0 0; background-repeat: no-repeat; height: 6px; width: 8px; }
+			.top-toggle{
+				display: block;
+			}
+			
+		}
+		a { color: #888; }
+		a:hover { color: #ff464e; }
+
+	}
+	
+	.inlineBlock {
+		display: inline-block;
+	}
+}

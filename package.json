@@ -1,0 +1,40 @@
+{
+  "name": "next-react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node server.js",
+    "dev:next": "next",
+    "export": "next export",
+    "start": "node server.js",
+    "build": "next build",
+    "prd-test": "next build && node serverPc.js",
+    "prd": "next build  && pm2 start serverPc.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/plugin-proposal-decorators": "^7.4.4",
+    "@loadable/component": "^5.10.2",
+    "@zeit/next-less": "^1.0.1",
+    "antd": "^3.20.3",
+    "axios": "^0.19.0",
+    "babel-plugin-import": "^1.12.0",
+    "babel-plugin-module-resolver": "^3.2.0",
+    "css-loader": "^0.28.11",
+    "express": "^4.17.1",
+    "isomorphic-unfetch": "^3.0.0",
+    "js-cookie": "^2.2.1",
+    "koa": "^2.7.0",
+    "koa-router": "^7.4.0",
+    "less": "^3.9.0",
+    "next": "^9.0.2",
+    "next-cookies": "^1.1.2",
+    "nprogress": "^0.2.0",
+    "qs": "^6.5.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "style-loader": "^0.23.1"
+  }
+}

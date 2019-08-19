@@ -1,0 +1,278 @@
+@import "../../common/regist-nav";
+.regist-main {
+	width: 1190px;
+	margin: 0 auto;
+	padding-top: 40px;
+	.head {
+		height: 66px;
+		width: 100%;
+		font-size: 0;
+		& > a {
+			line-height: 64px;
+			height: 66px;
+			display: inline-block;
+			width: 50%;
+			background: #f1f0f0;
+			text-align: center;
+			font-size: 16px;
+			color: #666;
+			border: 1px solid #dcdcdc;
+			box-sizing: border-box;
+			& > i {
+				font-size: 28px;
+				vertical-align: middle;
+				margin-right: 5px
+			}
+			& > span {
+				vertical-align: middle;
+			}
+			&.act {
+				background: #ff464e;
+				color: #fff;
+				position: relative;
+				border: 1px solid #ff464e;
+				&:after {
+					content: "";
+					position: absolute;
+					width: 12px;
+					height: 12px;
+					background: #fff;
+					left: 50%;
+					margin-left: -17px;
+					bottom: -7px;
+					transform: rotate(45deg);
+				}
+			}
+		}
+	}
+	
+	.content {
+		padding-top: 53px;
+		font-size: 0;
+		padding-bottom: 61px;
+	}
+	.left {
+		display: inline-block;
+		width: 620px;
+	}
+	.right {
+		display: inline-block;
+		margin-left: 34px;
+		vertical-align: top;
+		padding-left: 60px;
+		.step {
+			margin-bottom: 54px;
+			& > p {
+				display: inline-block;
+				vertical-align: middle;
+				color: #999;
+				width: 72px;
+				
+				span {
+					display: block;
+					font-size: 12px;
+					white-space: nowrap;
+					text-align: center;
+					&:first-child {
+						font-size: 14px;
+						height: 22px;
+						width: 22px;
+						line-height: 24px;
+						text-align: center;
+						border-radius: 50%;
+						color: #cfcfcf;
+						border: 1px solid #cfcfcf;
+						margin: 0 auto 14px;
+					}
+				}
+				&.act {
+					color: #3b4;
+					span:first-child {
+						color: #fff;
+						background: #3b4;
+						border: 1px solid #3b4;
+					}
+				}
+			}
+			.step-arrow {
+				width: 123px;
+				height: 11px;
+				background: url(https://image.meituitui.com/w/Content/images/regist/regist-arrow.png) no-repeat center;
+				display: inline-block;
+				vertical-align: top;
+				margin: 8px -13px 0;
+			}
+		}
+		
+		.regist-input {
+			width: 396px;
+			height: 52px;
+			border: 1px solid #ddd;
+			line-height: 52px;
+			margin-bottom: 34px;
+			white-space: nowrap;
+			position: relative;
+			& > input {
+				font-size: 14px;
+				vertical-align: middle;
+				height: 52px;
+				line-height: 52px;
+				padding: 0;
+				padding-left: 17px;
+				border: 0;
+				width: 271px;
+				float: left;
+			}
+			& > span {
+				vertical-align: middle;
+				display: inline-block;
+				font-size: 14px;
+				color: #666;
+				float: left;
+				&:first-child{
+					padding: 0 19px;
+					width: 70px;
+				}
+				&.regist-input-86 {
+					width: 57px;
+					height: 52px;
+					padding: 0;
+					text-align: center;
+					border-right: 1px solid #ddd
+				}
+			}
+			
+			//& > .regist-input-span {
+			//	padding: 0 19px;
+			//	width: 70px;
+			//}
+			& > .regist-input-btn {
+				width: 117px;
+				height: 52px;
+				vertical-align: middle;
+				display: inline-block;
+				border-left: 1px solid #ddd;
+				background: #f4f5f6;
+				text-align: center;
+				cursor: pointer;
+				&:hover {
+					background: #f6fbff
+				}
+			}
+			& > .iconfont {
+				position: absolute;
+				right: 20px;
+				top: 0;
+				cursor: pointer;
+			}
+			.wx-look {
+				position: relative;
+				cursor: pointer;
+				color: #47cbe2 !important;
+				line-height: 38px;
+				margin-left: 5px;
+				float: none !important;
+			}
+			.wx-look > img {
+				display: none;
+				z-index: 1;
+			}
+			.wx-look:hover > img {
+				display: block;
+				position: absolute;
+				left: -360px;
+				top: -200px;
+			}
+		}
+		
+		.regist-btn {
+			width: 398px;
+			height: 54px;
+			background: #ff464e;
+			text-align: center;
+			line-height: 54px;
+			font-size: 16px;
+			color: #fff;
+			cursor: pointer;
+		}
+	}
+	
+	.regist-main-success {
+		padding-top: 93px;
+		text-align:center;
+		& > .icon-tick {
+			font-size: 56px;
+			color: #3b4;
+			vertical-align: middle;
+			display: block;
+			margin-bottom: 15px
+		}
+		& > p {
+			color: #333;
+			font-size: 22px;
+			line-height: 22px;
+			margin-bottom: 52px
+		}
+		&.btn {
+			font-size: 16px;
+			color: #fff;
+			display: inline-block;
+			height: 54px;
+			width: 100px;
+			background: #ff464e;
+			line-height: 54px
+		}
+	}
+	.success {
+		padding-top: 93px;
+		text-align: center;
+		& > .icon-tick {
+			font-size: 56px;
+			color: #3b4;
+			vertical-align: middle;
+			display: block;
+			margin-bottom: 15px
+		}
+		& > p {
+			color: #333;
+			font-size: 22px;
+			line-height: 22px;
+			margin-bottom: 52px
+		}
+	}
+	
+	.bis-sign {
+		margin-top: 100px;
+		border: 1px solid #e5e5e5;
+		padding-top: 26px;
+		padding-bottom: 15px;
+		.bis-kuai {
+			width: 20%;
+			text-align: center;
+			display: inline-block;
+			vertical-align: middle;
+			height: 250px;
+			border-right: 1px solid #e5e5e5;
+			box-sizing: border-box;
+			&:last-child{
+				border-right: 0px;
+			}
+			& > img {
+				vertical-align: middle;
+				display: inline-block;
+				margin-bottom: 21px
+			}
+			& > h3 {
+				font-size: 16px;
+				margin-bottom: 7px
+			}
+			& > p {
+				color: #999;
+				font-size: 14px;
+				line-height: 25px;
+				box-sizing: border-box;
+				padding: 0 13px
+			}
+		}
+	}
+}

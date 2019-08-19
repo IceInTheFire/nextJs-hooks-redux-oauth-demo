@@ -1,0 +1,1 @@
+{"ast":null,"code":"import React from \"react\";\nimport Layout from \"../../layout/baseLayout\";\nimport { withRouter } from 'next/router';\nimport Link from 'next/link';\nvar Home = withRouter(function (props) {\n  return React.createElement(Layout, null, '我是用户');\n});\nexport default Home;","map":null,"metadata":{},"sourceType":"module"}
