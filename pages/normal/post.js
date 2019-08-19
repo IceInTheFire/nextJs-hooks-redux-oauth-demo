@@ -4,9 +4,9 @@ import { withRouter } from 'next/router';
 
 // import loadable from '@loadable/component'
 
-// const Layout = loadable(() => import('../../layout/homeLayout'))
+// const Layout = loadable(() => import('../../layout/baseLayout'))
 
-import Layout from 'layout/homeLayout';
+import Layout from 'layout/baseLayout';
 
 // 下面代码通过withRouter将next的router作为一个prop注入到component中，实现对url参数的访问。
 const Post = withRouter((props) => (

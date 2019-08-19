@@ -3,8 +3,8 @@ import Link from 'next/link';
 
 // import loadable from '@loadable/component'
 
-// const Layout = loadable(() => import('../../layout/homeLayout'))
-import Layout from 'layout/homeLayout';
+// const Layout = loadable(() => import('../../layout/baseLayout'))
+import Layout from 'layout/baseLayout';
 // link 的as是url地址， href是跳转地址
 const PostLink = (props) => (
     <li>

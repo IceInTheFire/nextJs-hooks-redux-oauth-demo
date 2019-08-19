@@ -1,1 +1,0 @@
-{"ast":null,"code":"export const showLoading = () => {\n  try {\n    document.getElementById('loading').style.display = 'block';\n  } catch (err) {}\n};\nexport const hideLoading = () => {\n  try {\n    document.getElementById('loading').style.display = 'none';\n  } catch (err) {}\n};","map":null,"metadata":{},"sourceType":"module"}

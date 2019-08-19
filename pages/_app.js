@@ -48,7 +48,7 @@ import { Data } from "store/data";
 import Router from 'next/router';
 import NProgress from 'nprogress';
 import nextCookie from "next-cookies";
-import {withRouter} from 'next/router';
+import { withRouter } from 'next/router';
 ///pages/_app.js
 // 简单的
 export default class MyApp extends App {
