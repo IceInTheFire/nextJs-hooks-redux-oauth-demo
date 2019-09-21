@@ -5,8 +5,8 @@ import Link from 'next/link';
 
 // import loadable from '@loadable/component'
 
-// const Layout = loadable(() => import('../../layout/baseLayout'))
-import Layout from 'layout/baseLayout';
+// const Layout = loadable(() => import('../../layout/BaseLayout'))
+import Layout from 'layout/BaseLayout';
 const Fetch = (props) => (
     <Layout>
         <ul>
@@ -25,9 +25,8 @@ const Fetch = (props) => (
 
 
 Fetch.getInitialProps = async function () {
-    // const res = await fetch('http://www.yueqingfang.cn/api/poetry.js');
-    const res = await fetch('http://localhost:3001/api/poetry');
-
+    const res = await fetch('http://www.yueqingfang.cn/api/poetry.js');
+    // const res = await fetch('http://localhost:3001/api/poetry');
     const data = await res.json();
     return {
         poetrys: data.poetry

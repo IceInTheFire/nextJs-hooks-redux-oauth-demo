@@ -1,7 +1,7 @@
 // import loadable from '@loadable/component'
 
-// const Layout = loadable(() => import('../layout/baseLayout'))
-import Layout from 'layout/baseLayout';
+// const Layout = loadable(() => import('../layout/BaseLayout'))
+import Layout from 'layout/BaseLayout';
 import { name } from 'config';
 import { useState, useEffect, useContext } from 'react';
 // import Loading from 'components/loading'

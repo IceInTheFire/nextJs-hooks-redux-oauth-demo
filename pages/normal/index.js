@@ -3,8 +3,8 @@ import Link from 'next/link';
 
 // import loadable from '@loadable/component'
 
-// const Layout = loadable(() => import('../../layout/baseLayout'))
-import Layout from 'layout/baseLayout';
+// const Layout = loadable(() => import('../../layout/BaseLayout'))
+import Layout from 'layout/BaseLayout';
 import Loading from 'components/Loading/';
 const PostLink = (props) => (
     <li>

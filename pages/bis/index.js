@@ -1,6 +1,8 @@
-import Layout from 'layout/baseLayout';
+import Layout from 'layout/BaseLayout';
 
 import {withRouter} from 'next/router';
+
+import { bisAuthSync } from 'utils/auth';
 
 import Link from 'next/link'
 
@@ -19,4 +21,4 @@ Home.getInitialProps = async function (context) {
 }
 
 
-export default Home;
+export default bisAuthSync(Home);

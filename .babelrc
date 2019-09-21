@@ -14,7 +14,8 @@
           "core": "./core",
           "layout": "./layout",
           "store": "./store",
-          "@": "./"
+          "@": "./",
+          "utils": "./utils"
         }
       }
     ],

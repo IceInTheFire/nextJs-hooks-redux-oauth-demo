@@ -1,6 +1,8 @@
-import Layout from 'layout/baseLayout';
+import Layout from 'layout/BaseLayout';
 
 import {withRouter} from 'next/router';
+
+import { userAuthSync } from 'utils/auth';
 
 import Link from 'next/link'
 
@@ -12,4 +14,4 @@ const Home = withRouter((props) => {
 });
 
 
-export default Home;
+export default userAuthSync(Home);

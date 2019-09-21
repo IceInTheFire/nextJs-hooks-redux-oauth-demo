@@ -17,6 +17,7 @@ app.prepare()
         router.get('/normal/p/:id', (ctx, next) => {
             const actualPage = '/normal/post';
             const queryParams = { title: ctx.params.id };
+            ctx.res.response = ctx.response;
             app.render(ctx.req, ctx.res, actualPage, queryParams);
             ctx.respond = false;
         });
@@ -27,6 +28,7 @@ app.prepare()
 
         // 如果没有配置nginx做静态文件服务，下面代码请务必开启
         server.use(async (ctx, next) => {
+            ctx.res.response = ctx.response;
             await handle(ctx.req, ctx.res);
             ctx.respond = false
         });
